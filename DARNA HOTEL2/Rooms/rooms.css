@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 1em;
+    
+}
+::-webkit-scrollbar-thumb {
+    background-color: #16273c;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+
+
+/*****************************************/
+/* Navbar*/
+
+
+
+li{
+    list-style: none;
+}
+
+#aa{
+    text-decoration: none;
+    color:white;
+    font-size: 2em;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#aa:hover{
+    color:#D9B1A2 ;
+}
+
+header{
+    position: relative;
+    padding: .5em 4em;
+    background-color: #16273c;
+}
+
+.test-40{
+    border-radius: 100px;
+}
+
+.navbar{
+    width: 100%;
+    height: 18%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links{
+display: flex;
+gap: 5em;
+text-align: center;
+justify-content: space-around;
+}
+.navbar .toggle-btn{
+    color:white;
+    font-size: 3em;
+cursor: pointer;
+display: none;
+}
+.action-btn{
+    color: #16273c;
+
+    background-color:white ;
+    padding: 0 1em;
+    border-radius: 3em;
+outline: none;
+border: none;
+font-size: 2em;
+font-weight: bold;
+cursor: pointer;
+transition: scale .2 ease;
+}
+
+/*
+.action-btn:hover{
+    scale: 1.2;
+    color: white;
+}
+
+*/
+.action-btn:active{
+    scale: 1;
+}
+
+/* dropdown*/
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 4em;
+    top: 5em;
+    width: 27em;
+    background-color:#EDF6F9 ;
+    backdrop-filter: blur(.5em);
+    border-radius: 10em;
+    overflow: hidden;
+    width:15em;
+  height: 0;
+transition: height .2cubic-bazier(0.175,0.885,0.32,1.275);
+}
+.dropdown_menu.open{
+height: 28em;
+
+}
+.dropdown_menu li{
+    padding: 2em;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action-btn{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Responsive*/
+
+@media  (max-width:992px){
+    
+.navbar .links,
+.navbar .action-btn{
+    display: none;
+}
+.navbar .toggle-btn{
+    display: block;
+}
+.dropdown_menu {
+    display: block;
+}
+
+}
+@media  (max-width:576px){
+    .dropdown_menu{
+        left: 4em;
+        width: unset;
+    }
+}
+
+
+
+
+.test-67{
+    margin: 3em;
+    padding: 1em 10%;
+    padding-bottom: 8em;
+
+
+}
+
+
+.test-67 .test-69{
+    text-align: center;
+    padding: 1em;
+    font-size: 3.5em;   
+}
+
+.test-67 .test-65{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 1em;
+}
+.test-67 .test-68{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 1em;
+}
+
+.test-67 .test-73{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 1em;
+}
+
+
+.test-66{
+position: relative;
+left: 2em;
+
+}
+
+.test-69{
+color: rgb(13, 62, 112);
+
+}
+
+.test-70{
+    font-size: 2em;
+    padding-bottom: 1em;
+    color: rgb(75, 133, 190);
+}
+
+.fa-brands{
+position: relative;
+left: 5em;
+color: rgb(13, 62, 112);
+}
+.test-71{
+position: relative;
+    width: 14.8em;
+    padding: 2em;
+    background-color: rgb(201, 221, 242);
+}
+
+.test-72{
+    width: 8em;
+    height: 3em;
+position: relative;
+left: 10em;
+background-color: rgb(13, 62, 112);
+color: #fff;
+border-style: none;
+
+}
+.test-72:hover{
+    background-color:  rgb(75, 133, 190);
+}
+
+.img3:hover{
+scale: 1.02;
+}
+
+
+
+
+/************************************************************/
+/*ROOMS*/
+
+
+
+ .w-section .rooms{
+ 
+
+    text-align: center;
+    padding: 1em;
+    font-size: 3.5em;  
+
+
+}
+.zzz {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 10em;
+    justify-content: space-evenly;
+    padding: 1em 5%;
+    padding-bottom: 5em;
+}
+.zzz1{
+    justify-content: space-evenly;
+}
+
+
+.bb{
+
+        display: inline-block;
+        margin-top: 1rem;
+        color: #fff;
+        background-color: #102C57;
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        border-radius: .4rem;
+        text-decoration: none;
+
+}
+
+
+
+.aa{
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #D9B1A2;
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+    border-radius: .3rem;
+    text-decoration: none;
+position: relative;
+left: 1em;
+
+}
+
+.gap4{
+    padding-top: 2em;
+}
+
+.test-72{
+    width: 10em;
+    height: 5em;
+position: relative;
+left: 10em;
+background-color: #D9B1A2;
+color: #fff;
+border-style: none;
+text-decoration: none;
+list-style: none;
+
+
+
+}
+
+
+
+/********************************************************/
+    /* footer*/
+
+.test-63{
+    display: flex;
+flex-direction: column;
+background-color: #fff;
+}
+.test-56{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color:#132035;
+padding: 2.5em 8% ;
+}
+.test-64{
+    list-style: none;
+    text-decoration: none;
+}
+.test-58{
+    width: 33.3%;
+}
+.test-58 h3{
+    position: relative;
+    margin-bottom: 1.5em;
+    font-weight: 400;
+    font-size: 1.5em;
+color: #D9B1A2;   
+ text-transform: capitalize;
+}
+
+.test-58 h3::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #fff;
+    height: 2px;
+    width: 40px;
+}
+.test-64{
+    color: #fff;
+    font-size: 1em;
+
+}
+
+.test-64 li:not(:last-child){
+    margin-bottom: .5em;
+}
+
+.test-64 li .a11{
+    color: #ffff;
+    display: block;
+    font-size: 2em;
+    text-transform:capitalize;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.test-64 li .a11:hover{
+    color: white;
+    padding-left: 2px;
+}
+
+.test-64{
+    color: #fff;
+}
+
+
+.link5 .a11{
+    display: inline-block;
+    color: #ffff;
+    height: 70px;
+    width: 70px;
+    background-color:#D9B1A2;
+    margin: 0 5px 5px 0 ;
+    text-align: center;
+    line-height: 45px;
+    transition: .4s;
+border-radius: 50%;
+
+}
+.link5 i{
+position: relative;
+top: .4em;
+left: .04em;
+}
+
+.c{
+    font-size: 2em;
+}
+
+.link5 a:hover{
+    color:#D9B1A2;
+
+background-color: #fff;
+
+}
+
+.test-61{
+    text-align: center;
+    background-color:  #ede2cf;
+    padding: 1em;
+    color: rgb(13, 62, 112);
+}
+@media (max-width:740px){
+    .test-58{
+        width: 70%;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+    .test-58 h3::before{
+all: unset;
+    } 
+
+.test-63{
+    padding-top: 10em;
+}
+}
+@media (max-width:555px){
+    .test-58{
+        width: 100%;
+    }
+
+}
